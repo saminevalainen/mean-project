@@ -2,7 +2,7 @@
 
 ---
 
-This is a repository for Node.js and AngularJS projects for [NodeJS summer project](https://github.com/TeemuKoivisto/angular-node-projekti-2016-kesa) courses
+This is a repository for Node.js and AngularJS projects for [Node.js and AngularJS summer projects](https://github.com/TeemuKoivisto/angular-node-projekti-2016-kesa) courses
 
 ## Summary
 
@@ -10,9 +10,9 @@ A small MEAN (MongoDB, Express, AngularJS, Node.js) app done as part of summer N
 
 #### Code:
 
-Backend code: server.js
+Backend code: `server.js`
 
-Frontend code: public/*
+Frontend code: `public/*`
 
 + some configuration files on root
 
@@ -24,8 +24,6 @@ Frontend code: public/*
 - Export MONGODB_URI that contains user, password and address to your database
 - `npm start`
 - Connect to `localhost:8080/` with your favourite browser
-
-- [ ] Return the project latest 29.08.2016 via this link: [Google form](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfndBvApdQ4rBrUWSBvussd_ICep5n5ithcslduQ31VSj8Cog/viewform)
 
 ## Work diary Node.js (total 27 hours)
 
@@ -79,7 +77,8 @@ Frontend code: public/*
 28.08.2016 (2 hours)
 - [X] Testing and fixing bugs on Node.js
 - [X] Create remote git repo to github
-- [X] Submit
+- [X] Submit [Google form](https://docs.google.com/forms/u/0/d/e/1FAIpQLSfndBvApdQ4rBrUWSBvussd_ICep5n5ithcslduQ31VSj8Cog/viewform)
+
 
 ---
 
@@ -113,7 +112,7 @@ Frontend code: public/*
 - [X] Lot of manual testing
 
 26.08.2016 (1 hour)
-- [ ] Project demo
+- [X] Project demo
 - [X] Testing and fixing bugs
 
 27.08.2016 (1 hour)
