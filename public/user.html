@@ -1,0 +1,21 @@
+<h3>
+      Username: {{ user.userName }}
+</h3>
+<div ng-hide="editMode" class="container">
+  <div>
+    <p>UserName: {{ user.userName }} </p>
+    <p>Password: {{ user.password }} </p>
+    <p>First name: {{ user.firstName }} </p>
+    <p>Last name: {{ user.lastName }} </p>
+    <p>Email: {{ user.email }} </p>
+    <p>Admin: {{ user.admin }} </p>
+    <p>
+      <button class="btn btn-default" ng-click="toggleEdit()">Edit</button>
+      <a href="#/><a <button style="margin-top:20px" class="btn btn-default" ng-click="deleteUser(user._id)">Delete</button></a>
+      <a class="btn btn-default" href="#/">Back</a>
+    </p>
+  </div>
+</div>
+<!-- User form -->
+<div ng-include="userFormUrl">
+</div>

@@ -1,0 +1,39 @@
+<h3>
+  List Users
+</h3>
+<div class="container">
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <th>UserID</th>
+        <th>Username</th>
+        <th>First name</th>
+        <th>Last name</th>
+        <th colspan="2">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="user in users | orderBy:'user.userName'" style="cursor:pointer">
+        <td>
+          <a ng-href="#/user/{{user._id}}">{{ user._id }}</a>
+        </td>
+        <td>
+         {{ user.userName }}
+        </td>
+        <td>
+          {{ user.firstName }}
+        </td>
+        <td>
+          {{ user.lastName }}
+        </td>
+        <td>
+          <button class="btn btn-default" ng-href="#/user/:userId">Edit</a>
+        </td>
+        <td>
+          <a href="#/list/users"><button class="btn btn-default" ng-click="deleteUser(user._id)">Delete</button></a>
+        </td>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

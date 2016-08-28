@@ -1,0 +1,19 @@
+{
+	"name": "mean-project-admin",
+	"version": "0.0.2",
+	"description": "A simple user admin app done with MEAN stack",
+	"author": "Sami Nevalainen",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no tests\" && exit 1",
+		"start": "nodemon server.js",
+		"heroku": "git push heroku master"
+	},
+	"license": "MIT",
+	"dependencies": {
+		"body-parser": "^1.13.3",
+		"express": "^4.13.3",
+		"mongodb": "^2.1.6",
+		"nodemon": "^1.9.1"
+	}
+}

@@ -1,0 +1,37 @@
+<div ng-hide="user._id">
+      <h2>Create new user</h2>
+</div>
+<div class="container">
+  <form name="userForm">
+    <p>
+      <label>Username (required)</label>
+      <input id="name" class="form-control" type="text" ng-model="user.userName" required />
+    </p>
+    <p>
+      <label>Password (required)</label>
+      <input id="name" class="form-control" type="password" ng-model="user.password" required />
+    </p>
+    <p>
+      <label>First Name</label>
+      <input id="name" class="form-control" type="text" ng-model="user.firstName" />
+    </p>
+    <p>
+      <label>Last Name</label>
+      <input id="name" class="form-control" type="text" ng-model="user.lastName" />
+    </p>
+    <p>
+      <label>Email</label>
+      <input id="name" class="form-control" type="text" ng-model="user.email" />
+    </p>
+    <p>
+      <div class="checkbox">
+        <label>
+        <input id="name" class="form-control" type="checkbox" ng-model="user.admin" ng-init="user.admin=false">Admin</label>
+      </div>
+    </p>
+    <p>
+      <button ng-disabled="userForm.$invalid" class="btn btn-default" ng-click="saveUser(user)">Save</button>
+      <button class="btn btn-default" ng-click="back()">Back</button>
+    </p>
+  </form>
+</div>
