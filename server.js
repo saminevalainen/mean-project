@@ -1,3 +1,4 @@
+var dotenv = require("dotenv").config();
 var express = require("express");
 var bodyParser = require("body-parser");
 var path = require("path");
@@ -32,7 +33,6 @@ mongodb.MongoClient.connect(process.env.MONGODB_URI, function (err, database) {
 		console.log("mean-project-admin address ", server.address().address, " port ", port);
 	})
 });
-
 
 
 // USERS API ROUTES
